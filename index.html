@@ -2,48 +2,8 @@
 <html lang="en">
 <!-- Import Packages & Styles -->
 <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
-<link rel="stylesheet" type="text/css" href="./assets/remote/css/style.css">
-<script src="./assets/remote/js/script.js?v=1.0.8"></script>
-  <style type="text/css">
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
+<link rel="stylesheet" type="text/css" href="./style.css">
 
-body {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  height: 100vh;
-}
-  
-  h1 {
-    color: #aaa;
-    font-family: "Source Sans Pro";
-    font-size: 1.2rem;
-    left: 50%;
-    letter-spacing: 4px;
-    position: absolute;
-    text-align: center;
-    top: -60px;
-    transform: translateX(-50%);
-    width: 100%;
-  }
-		
-
-@keyframes gradient {
-0% {
-	background-position: 0% 50%;
-	}
-50% {
-	background-position: 100% 50%;
-	}
-100% {
-	background-position: 0% 50%;
-	}
-}
-	</style>
 
 
 <head>
@@ -57,18 +17,19 @@ body {
 
 <body>
   <main class="body-content">
-    <div style="margin-top: 60px;">
-      <div class="mb-5">
-        <h1 style="font-weight: bold;">CESTA Online</span></h1>
-        <p style="font-size: 1.1em;">The CESTA Research Anthology is an annual publication which showcases the work of our many vibrant research projects, as seen by our undergraduate research interns.</p>
-              </div>
-      <div style="margin-top: 80px;">
+    <div class="d-flex flex-column align-items-center justify-content-center vh-100 p-lg-4">
+      <div class="d-flex align-items-center logo-container mb-4">
+        <img src="./assets/cesta_logo_WT.svg" alt="CESTA Logo" class="logo">
+        <span class="title">Online</span>
       </div>
-
+      <div class="description-container">
+        <p class="lead">A new space for interactive online materials from the Center for Spatial and Textual Analysis at Stanford.</p>
+      </div>
+      <div class="d-flex flex-column align-items-center justify-content-center mt-4">
+        <a href="/anthology" class="btn btn-outline-light btn-lg">View Anthology</a>
+      </div>
     </div>
   </main>
 </body>
 
 </html>
-
-
